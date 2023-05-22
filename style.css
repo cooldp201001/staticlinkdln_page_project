@@ -6,7 +6,7 @@
 }
 
 body {
-   background: wheat;
+   background:  rgb(212, 212, 212);
 }
 
 .header {
@@ -21,6 +21,7 @@ body {
    display: flex;
    width: 25%;
    align-items: center;
+   margin-left: 5rem;
 }
 
 .header .logo {
@@ -80,9 +81,10 @@ body {
    font-size: 1rem;
    color:#808081;
 }
-.horizontal-bar div :hover i,p  {
+.horizontal-bar  div:hover  p,.horizontal-bar  div:hover  i {
    color: black;
 }
+
 /* for centering the icon's name */
 .horizontal-bar>div {
    border-bottom:0.3rem solid transparent ;
@@ -118,73 +120,77 @@ a {
 
 /* left panel profile-image */
 #profile_img {
-   height: 7vw;
-   width: 7vw;
-   border-radius: 4vw;
+   height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 3rem;
 }
 
 .basic-details {
-   border: 0.1vh solid silver;
-   border-radius: 0.5vw;
+   border: 0.1rem solid silver;
+   border-radius: 0.5rem;
    background-color: white;
 }
 
-.basic-details #background_img {
+/* .basic-details #background_img {
    width: 100%;
    height: 15vh;
    border-radius: 0.5vw 0.5vw 0 0;
-}
+} */
 
 /* basic details for padding left side */
 .basic-details2 {
    background: white;
-   margin-top: 1vh;
-   border-radius: 1vw;
-   border: 0.1vw solid silver;
-   padding: 5px;
+   margin-top: 1rem;
+   border-radius: 0.5rem;
+   border: 0.1rem solid silver;
+   padding: 1rem;
 }
 
-.basic-details2 li {
-   font-size: 2vh;
+/* .basic-details2 li {
+   color: red;
+   font-size: 1rem;
    list-style-type: none;
    color: silver;
-}
+} */
 
 .post-section {
    display: flex;
    /* width: 100%; */
    flex-direction: column;
-   row-gap: 1vh;
-   border-radius: 2vw;
-   border: 0.1vw solid silver;
+   border-radius: 1rem;
+   border: 0.1rem solid silver;
    background: white;
-   margin: 0 0.5vw 0 0.5vw ;
+   margin: 0 0.5rem 0 0.5rem ;
    
 }
 
 .post-section>#profile-post {
    margin-top: 1vw;
    display: flex;
-   width: 100%;
+   /* width: 100%; */
+   justify-content: center;
 }
 
 .post-section #profile-picture {
-   width: 6vw;
-   height: 5vw;
+   width: 3vw;
+   height: 3vw;
    border-radius: 50%;
 }
 
+
 #profile-post>#post {
-   padding: 1vw;
-   width: 80%;
-   border: 0.2vw solid black;
-   border-radius: 5vh;
-   height: 50%;
+   font-size: 1.3rem;
+   padding: 1rem;
+    width: 80%;
+    border: 0.1rem solid gray;
+    border-radius: 2rem;
+   
 }
 
 .post-section #color-icons {
    display: flex;
    justify-content: space-evenly;
+   margin-top: 0.5rem;
 }
 
 #color-icons div {
@@ -219,66 +225,73 @@ a {
 
 .postContainer {
    background-color: white;
-   margin: 0.5vw;
-   border: 0.1vw solid silver;
-   border-radius: 2vw;
+   margin: 0.5rem;
+   border: 0.1rem solid silver;
+   border-radius: 1rem;
 
 }
 
 .postContainer>#upper-subsection {
-   margin-top: 1vw;
+   margin-top: 0.5rem;
    display: flex;
-   flex-direction: row;
 }
 
 /* postContainer-logo-section */
 .myntra-logo {
-   margin-right: 1vw;
-   height: 7vh;
-   width: 5vw;
-   border-radius: 1vw;
+   margin-right: 1rem;
+   height: 4rem;
+   width: 4rem;
+   border-radius: 1rem;
 }
 
 /* menu-right */
 #logoAndMenu {
    width: 100%;
    display: flex;
-   flex-direction: row;
+ 
    justify-content: space-between;
 }
 
 .myntra-poster {
    width: 100%;
-   height: 50vh;
 }
 
 .reaction {
    display: flex;
    justify-content: space-evenly;
 }
-
+hr{
+   border: 0.1rem solid silver;
+}
 .reaction p {
    cursor: pointer;
 }
 
 .left_pannel {
-   border-radius: 0.5vw;
-   background-color: white;
-   margin: 0.5vw;
+   border-radius: 0.5rem;
+   margin: 0.5rem;
    height: fit-content;
+  
 }
 .middle_pannel {
-   margin: 0.5vw;
+   margin: 0.5rem;
 }
 /* this is for placing the the heading and the information logo in right pannel */
 #heading {
-   font-size: 5vw;
-   margin: 0.5vw;
    display: flex;
    justify-content: space-between;
+   padding: 1rem;
 }
+#subsection ul li{
+ list-style-type: none;
+   margin: 0.5rem;
+}
+#subsection ul p{
+   margin: 0.5rem;
+}
+
 .right_pannel {
-   margin: 0.5vw;
+   margin: 0.5rem;
    height: fit-content;
 }
 .right_pannel div{
@@ -296,15 +309,16 @@ a {
    
 }
 
-.right_pannel #subsection {
+#subsection {
    background-color: white;
-   border: 0.1vw solid silver;
-   border-radius: 1vw;
+   border: 0.1rem solid silver;
+   border-radius: 0.5rem;
    /* margin-top: 1.5vw; */
 }
 
 #company_follow {
    display: flex;
+   flex-direction: column;
 }
 
 #company_follow img {
@@ -313,15 +327,19 @@ a {
 }
 
 #company_follow button {
-   border: 0.1vw solid black;
-   width: 100%;
-   border-radius: 2vw;
-   background-color: white;
-   padding: 0.5vh;
+   border: 0.1rem solid #318CE7;
+    background-color: white;
+    color: #318CE7;
+    width: 50%;
+    border-radius: 1rem;
+    
+    padding: 0.3rem;
+    transition: all 0.2s;
 }
 
 #company_follow button:hover {
-   background-color: skyblue;
+   outline: 0.1rem solid #318CE7 ;
+   background-color:hsl(202, 62%, 88%);
 }
 
 .dropDownBtn {
@@ -336,7 +354,7 @@ a {
    padding: 1rem;
    border-radius: 1rem;
    box-shadow: 3px 3px 40px 0px black;
-
+  
 }
 
 #meIcon:hover .dropDownDiv  {
@@ -375,6 +393,9 @@ a {
    justify-content: center;
    color:goldenrod;
    
+}
+.infoIconSize{
+   font-size: 1.5rem;
 }
 .forBusiness{
    border-left: 0.2rem solid black;
@@ -451,19 +472,23 @@ a {
    background-image: url(./images/background.jpg);
    background-repeat: no-repeat;
    background-size: 100% 50%;
-   height: 10vw;
+   height: 7rem;
    display: flex;
    justify-content: center;
    align-items: center;
-   border-top-right-radius: 0.5vw;
+   border-radius: 0.5rem;
 }
 
 .flex {
    display: flex;
    justify-content: space-between;
-   padding-right: 0.2vw;
+   padding-right: 0.2rem;
 }
-
+.companylogoName{
+   display: flex;
+   flex-direction: row;
+  
+}
 .rightProfileDiv {
    display: flex;
    justify-content: space-between;
@@ -482,7 +507,7 @@ flex-direction: column;
    display: flex;
    justify-content: space-evenly;
    width: 30%;
-   height: 3vw;
+   height: 3rem;
    align-items: center;
    cursor: pointer;
 }
@@ -500,6 +525,13 @@ flex-direction: column;
 }
 
 .margin {
-   margin-left: 0.5vw;
+   margin-left: 0.5rem;
+}
+.basic-details2 ul li{
+  
+   list-style-type: none;
+   color: silver;
+   margin: 0.5rem;
+   font-size: 1rem;
 }
 
