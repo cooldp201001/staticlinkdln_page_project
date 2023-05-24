@@ -15,6 +15,7 @@
 
 <body>
   <!-- top header -->
+  <div>
   <nav class="header">
 
     <!-- left side -->
@@ -33,10 +34,15 @@
       <div class="horizontal-bar">
 
         <!-- for centering the icon's names -->
+        <!-- border --> 
+        <div class="searchIcon">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></a>
+          <div class="searchContainer">
+           <input class="searchInput"  type="text"> 
+          </div>
+      </div>
         <div>
-          <a href="#"><i class="fa-solid fa-house-user"></i>
-            <p>home</p>
-          </a>
+          <a href="#"><i class="fa-solid fa-house-user"></i><p>home</p></a>
         </div>
         <div>
           <a href="#"><i class="fa-solid fa-users"></i>
@@ -68,7 +74,7 @@
       <div class="rightProfileDiv">
 
         <!-- making profilePic and caret-down icon as a button to showup the dropdown -->
-        <div id="meIcon">
+        <div class="meIcon">
           <img class="profile-top-right" src="./images/Profile image.png" alt="no-image">
           <p style="text-align: center; ">Me <i class="fa fa-caret-down"></i></p>
           <div class="dropDownDiv"> <!-- dropdown  div showing profile info -->
@@ -140,18 +146,18 @@
         <h3 style="text-align: center;">Yash Sharma</h3>
         <p style="text-align:center ;">Technical trainer at skill Academy</p>
         <br>
-        <hr style="border: 0.1rem solid silver">
+        <hr >
         <br>
         <div class="flex">
           <p class="margin">Connections:-</p><a style="color: blue ;margin-right: 0.1rem;" href="#">30</a>
         </div>
-        <p class="margin"><b>Grow your network</b></p>
+        <h3 class="margin">Grow your network</h3>
         <br>
         <div class="flex">
           <p class="margin">Who viewed your profile:-</p><a style="color: blue; margin-right: 0.1rem;" href="#">30</a>
         </div>
         <br>
-        <hr style="border: 0.1rem solid silver">
+        <hr>
         <br>
         <p class="margin">Access exclusive tool and sights</p>
         <h5 class="margin">Try premium for one month</h5>
@@ -217,6 +223,16 @@
         </div>
         <br>
       </div>
+      
+      <!-- div that contain hr tag and sort by top icon -->
+
+      <div class="sortByTopContainer"> 
+ 
+        <div  class="divideLine"  ><hr style="width: 100%;" ></div>
+          <div class="sortbyTopPara">
+            <p style="color: grey;">Sort by:<span ><b>Top <i class="fa fa-caret-down" ></i></b></span></p>
+          </div>
+      </div>
 
       <!-- myntra post start -->
       <div class="postContainer">
@@ -230,7 +246,7 @@
               <p> 80,53,321 followers</p>
               <p>promoted</p>
             </div>
-            <i style="padding: 1rem;" class="fa-solid fa-bars"></i>
+            <i style="padding: 1rem; cursor: pointer;" class="fa-solid fa-bars"></i>
           </div>
         </div>
 
@@ -262,6 +278,7 @@
         </div>
       </div><!-- myntra post  end -->
 
+     
       <!-- yash sharma creation start  -->
       <div class="postContainer">
 
@@ -274,7 +291,7 @@
               <p> 10 Million followers</p>
               <p>Youtube Channel</p>
             </div>
-            <i style="padding: 1rem ;" class="fa-solid fa-bars"></i>
+            <i style="padding: 1rem ;cursor: pointer;" class="fa-solid fa-bars"></i>
           </div>
         </div>
         <p style="margin: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reiciendis nobis nam
@@ -302,6 +319,10 @@
         </div>
       </div> <!-- yash sharma creation end here  -->
 
+       <!--  enable this div when screen is less then 991px  -->
+       <div class="newPostBtnContainer">
+        <button >See New Posts</button>
+      </div>
     </div> <!-- middle-pannel end here -->
 
     <!-- right-panel -->
@@ -355,7 +376,7 @@
           <div class="companylogoName">
             <img src="./images/unilever logo.png" alt="no-image">
             <div>
-              <h2>Unilever</h2>
+              <h3>Unilever</h3>
               <p>Company-Consumer Goods</p>
             </div>
           </div>
@@ -371,7 +392,7 @@
             <img src="./images/LinkedIn logo.png" alt="no-image">
 
             <div>
-              <h2>Linkedln</h2>
+              <h3>Linkedln</h3>
               <p>company-internet</p>
             </div>
 
@@ -386,18 +407,36 @@
           <div class="companylogoName">
             <img src="./images/myntra logo.jpg" alt="no-image">
             <div>
-              <h2>Myntra</h2>
+              <h3>Myntra</h3>
               <p>company-internet</p>
             </div>
           </div>
           <button type="submit">+ Follow</button>
         </div>
       </div>
-
+      
+      <!-- footer -->
+      <div class="footerContainer">
+        <footer>
+        <ul class="footerElm">
+        <li>About</li>
+        <li>Accessibility</li>
+        <li>Help Center</li>
+        <li> Privacy & Terms <i class="fa fa-caret-down"></i></li>
+        <li>Ad Choices</li>
+        <li>Adertising</li>
+        <li>Business Services <i class="fa fa-caret-down"></i></li>
+        <li>Get the Linkedln app</li>
+        <li>More</li>
+        </ul>
+      </footer>
+       
+      </div>
     </div> <!--  right-panel end here  -->
 
   </div> <!-- section-container end here -->
-  
+</div>
+
 </body>
 
 </html>
