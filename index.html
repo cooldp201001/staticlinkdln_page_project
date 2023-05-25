@@ -34,7 +34,7 @@
 
       <div class="horizontal_bar">
  
-        <!-- icons -->
+        <!--navbar icons -->
        <!-- this searchIcon will apear when the screensize <992px  -->
         <div class="searchIcon">
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></a>
@@ -69,13 +69,16 @@
       </div> <!-- horizontal_bar end here end here -->
         
       
-      <!--  top right profile div containing profile pic and a dropwndown icon -->
+      <!--  top right profile div containing profile pic  dropwndown icon for bussiness icon and trp premium link-->
       <div class="rightProfileDiv">
 
         <div class="meIcon">
           <img class="profile-top-right" src="./images/Profile image.png" alt="profile_img">
           <p style="text-align: center; ">Me <i class="fa fa-caret-down"></i></p>
-          <div class="dropDownDiv"> <!-- dropdown  div showing profile info -->
+
+           <!-- dropdown  div showing profile info -->
+          <div class="dropDownDiv">
+
             <div class="profileDetails">
               <!-- upper subsection -->
 
@@ -111,7 +114,7 @@
 
             </div>
 
-          </div>
+          </div> <!-- dropdwon end here -->
         </div>
 
         <div class="forBusiness">
@@ -119,14 +122,14 @@
           <p> for business <i class="fa fa-caret-down"></i></p>
         </div>
 
-
         <a href="#" class="premiumPara">Try Premium free for month</a>
       </div>
 
-    </div>
+    </div> <!-- wrapper2 div ends -->
 
-  </nav> <!-- header end here -->
-  <!-- sections start here  -->
+  </nav> <!-- navbar ends -->
+
+  <!-- sections start  -->
   <div class="section-container">
 
     <!-- left pannel -->
@@ -141,7 +144,7 @@
 
         <!-- profile details -->
         <h3 style="text-align: center;">Yash Sharma</h3>
-        <p style="text-align:center ;">Technical trainer at skill Academy</p>
+        <p style="text-align:center ;margin: 0.2rem;">Technical trainer at skill Academy</p>
         <br>
            
         <!-- making div that will work on when screensize is <768px -->
@@ -194,12 +197,15 @@
           <li>#Tensorflow</li>
         </ul>
       </div>
+
     </div> <!-- left-pannel end here -->
+
     <!-- button for showmore -->
     <div class="showMoreBtnContainer">
     <button class="showMoreBtn">Show More <i class="fa-sharp fa-solid fa-down"></i></button>
     
   </div>
+  
     <!-- middle-pannel -->
     <div class="middle_pannel ">
 
@@ -235,7 +241,7 @@
  
         <div  class="divideLine"  ><hr style="width: 100%;" ></div>
           <div class="sortbyTopPara">
-            <p style="color: grey;">Sort by:<span ><b>Top <i class="fa fa-caret-down" ></i></b></span></p>
+            <p >Sort by:<span ><b>Top <i class="fa fa-caret-down" ></i></b></span></p>
           </div>
       </div>
 
@@ -243,8 +249,8 @@
       <div class="postContainer">
         <!-- postContainer-logo-section -->
         <div id="upper-subsection">
-          <img src="./images/myntra logo.jpg" alt="myntra_logo" class="myntra-logo">
-          <div id="logoAndMenu">
+          <img src="./images/myntra logo.jpg" alt="myntra_logo" class="postLogoImg">
+          <div id="logoAndMenuIcon">
             <div>
               <!-- logo and -->
               <h3>Myntra fashion</h3>
@@ -259,21 +265,22 @@
           Great Deals & Discounts. Shoppable Looks From India's Top Influencers At Myntra Studio. Hurry Up And Shop Now.
           Lowest Price Ever. Shopping Paradise Found. Types: Heels, Shoes, Flats.</p>
 
-        <!-- myntra post div -->
+        
         <div>
           <img src="./images/myntra-poster.jpg" class="myntra-poster" alt="myntra_poster">
-
+           
+          <!-- small reaction icons below the myntra poster image -->
           <div class="smallReactionIcons">
-            <i class="fa-regular fa-thumbs-up"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-hands-clapping"></i>
+            <img src="./images/like.svg" alt="">
+            <img src="./images/heart.svg" alt="">
+            <img src="./images/clapping.svg" alt="">
             <p>20.comments</p>
           </div>
 
           <hr>
           <br>
-          <!-- rection elements for myntra post -->
-          <div class="reaction">
+          <!-- reaction elements for myntra post -->
+          <div class="reactionIcons">
             <p><span class="fa-solid fa-thumbs-up"></span> Likes</p>
             <p><span class="fa-solid fa-comment"></span> comments</p>
             <p><span class="fa-solid fa-share"></span> share </p>
@@ -289,8 +296,8 @@
 
         <!-- yash sharma logo  section and description -->
         <div id="upper-subsection">
-          <img src="./images/yash logo.jpg" alt="yash_logo" class="myntra-logo">
-          <div id="logoAndMenu">
+          <img src="./images/yash logo.jpg" alt="yash_logo" class="postLogoImg">
+          <div id="logoAndMenuIcon">
             <div>
               <h3>Yash Sharma</h3>
               <p> 10 Million followers</p>
@@ -299,22 +306,24 @@
             <i style="padding: 1rem ;cursor: pointer;" class="fa-solid fa-bars"></i>
           </div>
         </div>
-        <p style="margin: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur reiciendis nobis nam
-          quisquam amet commodi, aliquid perspiciatis, error iste cumque accusamus eaque necessitatibus. Obcaecati
-          quidem unde distinctio corporis cumque sunt.</p>
+        <p style="margin: 1rem;">Published new video on CSS Property Box model.This video will run through few more properties that make up the box-model, Margin,Border, Padding, Content-Height & Width</p>
+          
+          <!-- div containing the poster image and reactionicons -->
         <div>
           <video src="./video/Demo post video.mp4 " controls class="myntra-poster"></video>
           <br>
+          
           <div class="smallReactionIcons">
-            <i class="fa-regular fa-thumbs-up"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-hands-clapping"></i>
+            
+            <img src="./images/like.svg" alt="">
+            <img src="./images/heart.svg" alt="">
+            <img src="./images/clapping.svg" alt="">
             <p>20.comments</p>
           </div>
           <hr>
           <br>
           <!-- rection area on myntra post -->
-          <div class="reaction">
+          <div class="reactionIcons">
             <p><span class="fa-solid fa-thumbs-up"></span> Likes</p>
             <p><span class="fa-solid fa-comment"></span> comments</p>
             <p><span class="fa-solid fa-share"></span> share </p>
@@ -330,8 +339,8 @@
       </div>
     </div> <!-- middle-pannel end here -->
 
-    <!-- right-panel -->
-    <div class="right_pannel ">
+    <!-- right-panel start-->
+    <div class="right_pannel">
 
       <!-- linkedln news  -->
       <div id="subsection">
@@ -358,7 +367,7 @@
       <!-- most viewed course -->
       <div id="subsection">
         <div id="heading">
-          <h2>Today's most viewed course </h2>
+          <h2>Today's most viewed course</h2>
           <i class="fa-solid fa-circle-info infoIconSize"></i>
         </div>
         <ul>
@@ -377,8 +386,10 @@
           <h2>Add to your feed</h2>
           <i class="fa-solid fa-circle-info infoIconSize"></i>
         </div>
+        <!-- unilever  details -->
         <div id="company_follow">
-          <div class="companylogoName">
+
+          <div class="companyfollowDetails">
             <img src="./images/unilever logo.png" alt="unilever_logo">
             <div>
               <h3>Unilever</h3>
@@ -386,16 +397,17 @@
             </div>
           </div>
           <button type="button">+ Follow</button>
+
         </div>
 
+        <br>
         <hr>
         <br>
-
+         <!-- lnkedln details -->
         <div id="company_follow">
-          <div class="companylogoName">
-            
-            <img src="./images/LinkedIn logo.png" alt="linkedln_logo">
 
+          <div class="companyfollowDetails">
+            <img src="./images/LinkedIn logo.png" alt="linkedln_logo">
             <div>
               <h3>Linkedln</h3>
               <p>company-internet</p>
@@ -403,13 +415,16 @@
 
           </div>
           <button type="button">+ Follow</button>
+
         </div>
 
+        <br>
         <hr>
         <br>
-
+          <!-- myntra details -->
         <div id="company_follow">
-          <div class="companylogoName">
+
+          <div class="companyfollowDetails">
             <img src="./images/myntra logo.jpg" alt="myntra_logo">
             <div>
               <h3>Myntra</h3>
@@ -417,11 +432,14 @@
             </div>
           </div>
           <button type="submit">+ Follow</button>
+          
         </div>
+
+         <br>
       </div>
       
       <!-- footer -->
-      <div class="footerContainer">
+      <div >
         <footer>
         <ul class="footerElm">
         <li>About</li>
@@ -436,9 +454,9 @@
         </ul>
         <p><b style="color: rgb(99, 99, 248);">Liked <i class="fa-brands fa-linkedin"></i></b><span style="color:black;"> LinkedIn Corporation © 2023</span></p>
       </footer>
-       
       </div>
-    </div> <!--  right-panel end here  -->
+      
+    </div> <!--  right-panel ends -->
 
   </div> <!-- section-container end here -->
 
