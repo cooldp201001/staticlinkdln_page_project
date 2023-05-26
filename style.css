@@ -239,7 +239,8 @@ margin-top: 2rem;
 
 .basic-details {
    border: 0.1rem solid silver;
-   border-radius: 0.5rem;
+   border-radius: 1rem 1rem 0 0;
+   border-bottom: none;
    background-color: white;
 }
 
@@ -251,7 +252,17 @@ margin-top: 2rem;
    display: flex;
    justify-content: center;
    align-items: center;
-   border-radius: 0.5rem;
+   border-radius: 0.9rem;
+}
+.showMoreContainer{
+   display: block;
+   /* background-color: white; */
+   
+}
+.connectionToMyitemsDiv{
+   background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    border: 0.1rem solid silver;
 }
 
 #profile_img {
@@ -259,9 +270,10 @@ margin-top: 2rem;
     width: 4.5rem;
     border-radius: 3rem;
 }
-.showMoreContainer{
+.showMoreContainer:hover{
    display: block;
  }
+
 
  .flex {
    display: flex;
@@ -275,7 +287,7 @@ margin-top: 2rem;
 .basic-details2 {
    background-color: white;
    margin-top: 1rem;
-   border-radius: 0.5rem;
+   border-radius: 1rem;
    border: 0.1rem solid silver;
    padding: 1rem;
 }
@@ -288,13 +300,20 @@ margin-top: 2rem;
 .showMoreBtnContainer{
    display: none;
    justify-content: center;
-   height: 2rem;
+   height: 2.5rem;
+   
+   
+}
+.showMoreBtnContainer:hover + .showMoreContainer{
+   display: block;
 }
 .showMoreBtn{
-   width: 98%;
+   
+   width: 100%;
    padding: 0.5rem;
-   color: grey;
-   background-color:#EEEDE7;
+   color: rgb(82, 81, 81);
+   margin-top: 1rem;
+   background-color: transparent;
    border: none;
    cursor: pointer;
    transition: all 0.2s ;  
@@ -417,8 +436,8 @@ cursor: pointer;
 }
 .smallReactionIcons{
    display: flex;
-   justify-content: space-evenly;
-   width: 40%;
+   justify-content:flex-start;
+   width: 50%;
    height: 3rem;
    align-items: center;
    cursor: pointer;
@@ -612,20 +631,28 @@ margin-left: 0.5rem;
  
    .right_pannel{
       grid-column: 1/1;
-      grid-row: 4/4;
-    
+      grid-row: 4/4;  
    }
    .showMoreContainer{
       display: none;
+      padding-top: 1rem;
+      
    }
    .showMoreBtnContainer {
        display: flex;
        align-items: center;
       
     }
-   .basic-details2{
-      display: none;
+    .connectionToMyitemsDiv{
+      border-radius: 1rem;
+    }
+    .basic-details{
+      border-bottom: 0.1rem solid silver;
+      border-radius: 1rem ;
    }
+   /* .basic-details2{
+      display: none;
+   } */
 
  .post-section{
    margin: 0;
